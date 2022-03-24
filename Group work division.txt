@@ -1,0 +1,12 @@
+assignment2
+
+1. 684671 Hyunwoo Song -  student listview, panel, general UI design, handling excption and save the rog.
+2. 691136 Beril - modified Model layer to take different value types, managed sql server, teacher listview.
+3. 683343 Vedat Türk - rooms listview, managed github repasitory.
+
+
+assignment3
+
+1. 684671 Hyunwoo Song - drink supplements management
+2. 691136 Beril - Cash register
+3. 683343 Vedat Türk - Revernue Report

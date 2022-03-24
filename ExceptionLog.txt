@@ -1,0 +1,147 @@
+=============Error Logging ===========
+===========Start============= 11/03/2022 9:53:12 pm
+Error Message: Activities information is currently not available(we didn't add it yet)
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenUI\SomerenUI.cs:line 130
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenUI\SomerenUI.cs:line 61
+===========End============= 11/03/2022 9:53:12 pm
+=============Error Logging ===========
+===========Start============= 11/03/2022 9:57:54 pm
+Error Message: Activities information is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenUI\SomerenUI.cs:line 130
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenUI\SomerenUI.cs:line 61
+===========End============= 11/03/2022 9:57:54 pm
+=============Error Logging ===========
+===========Start============= 11/03/2022 9:59:01 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenUI\SomerenUI.cs:line 130
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenUI\SomerenUI.cs:line 61
+===========End============= 11/03/2022 9:59:01 pm
+=============Error Logging ===========
+===========Start============= 11/03/2022 10:01:56 pm
+Error Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+Stack Trace:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at SomerenDAL.BaseDao.OpenConnection() in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenDAL\BaseDao.cs:line 26
+===========End============= 11/03/2022 10:01:56 pm
+=============Error Logging ===========
+===========Start============= 11/03/2022 10:01:56 pm
+Error Message: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+Stack Trace:    at System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.StudentDao.GetAllStudents() in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenDAL\StudentDao.cs:line 16
+   at SomerenLogic.StudentService.GetStudents() in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenLogic\StudentService.cs:line 23
+   at SomerenUI.SomerenUI.ReadListOfStudents() in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenUI\SomerenUI.cs:line 87
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Someren-hyunwoo\SomerenUI\SomerenUI.cs:line 45
+===========End============= 11/03/2022 10:01:56 pm
+=============Error Logging ===========
+===========Start============= 11/03/2022 10:39:52 pm
+Error Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+Stack Trace:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at SomerenDAL.BaseDao.OpenConnection() in C:\Users\Hyunwoo\Documents\GitHub\Sommeren_Project\Someren-last-version\SomerenDAL\BaseDao.cs:line 26
+===========End============= 11/03/2022 10:39:52 pm
+=============Error Logging ===========
+===========Start============= 11/03/2022 10:39:52 pm
+Error Message: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+Stack Trace:    at System.Data.SqlClient.SqlCommand.ValidateCommand(String method, Boolean async)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SomerenDAL.BaseDao.ExecuteSelectQuery(String query, SqlParameter[] sqlParameters) in C:\Users\Hyunwoo\Documents\GitHub\Sommeren_Project\Someren-last-version\SomerenDAL\BaseDao.cs:line 99
+   at SomerenDAL.StudentDao.GetAllStudents() in C:\Users\Hyunwoo\Documents\GitHub\Sommeren_Project\Someren-last-version\SomerenDAL\StudentDao.cs:line 15
+   at SomerenLogic.StudentService.GetStudents() in C:\Users\Hyunwoo\Documents\GitHub\Sommeren_Project\Someren-last-version\SomerenLogic\StudentService.cs:line 19
+   at SomerenUI.SomerenUI.ReadListOfStudents() in C:\Users\Hyunwoo\Documents\GitHub\Sommeren_Project\Someren-last-version\SomerenUI\SomerenUI.cs:line 87
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Documents\GitHub\Sommeren_Project\Someren-last-version\SomerenUI\SomerenUI.cs:line 45
+===========End============= 11/03/2022 10:39:52 pm
+=============Error Logging ===========
+===========Start============= 15/03/2022 3:37:36 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 143
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 62
+===========End============= 15/03/2022 3:37:36 pm
+=============Error Logging ===========
+===========Start============= 15/03/2022 3:40:01 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 143
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 62
+===========End============= 15/03/2022 3:40:01 pm
+=============Error Logging ===========
+===========Start============= 15/03/2022 3:40:36 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 144
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 63
+===========End============= 15/03/2022 3:40:36 pm
+=============Error Logging ===========
+===========Start============= 15/03/2022 6:55:00 pm
+Error Message: InvalidArgument=Value of '1' is not valid for 'index'.
+Parameter name: index
+Stack Trace:    at System.Windows.Forms.ImageList.Draw(Graphics g, Int32 x, Int32 y, Int32 width, Int32 height, Int32 index)
+   at System.Windows.Forms.ImageList.Draw(Graphics g, Point pt, Int32 index)
+   at SomerenUI.SomerenUI.ReadListOfDrinks() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 202
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 85
+===========End============= 15/03/2022 6:55:00 pm
+=============Error Logging ===========
+===========Start============= 15/03/2022 8:29:48 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 145
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 64
+===========End============= 15/03/2022 8:29:48 pm
+=============Error Logging ===========
+===========Start============= 15/03/2022 10:57:02 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 147
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 66
+===========End============= 15/03/2022 10:57:02 pm
+=============Error Logging ===========
+===========Start============= 16/03/2022 2:26:47 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 146
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 65
+===========End============= 16/03/2022 2:26:47 pm
+=============Error Logging ===========
+===========Start============= 16/03/2022 3:15:48 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 146
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 65
+===========End============= 16/03/2022 3:15:48 pm
+=============Error Logging ===========
+===========Start============= 16/03/2022 3:32:13 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 146
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 65
+===========End============= 16/03/2022 3:32:13 pm
+=============Error Logging ===========
+===========Start============= 16/03/2022 3:34:33 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 146
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 65
+===========End============= 16/03/2022 3:34:33 pm
+=============Error Logging ===========
+===========Start============= 16/03/2022 6:37:23 pm
+Error Message: Activities list is currently not available.
+Stack Trace:    at SomerenUI.SomerenUI.ReadListOfActivitiess() in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 153
+   at SomerenUI.SomerenUI.showPanel(String panelName) in C:\Users\Hyunwoo\Desktop\Sommeren_Project-main\Someren-last-version\SomerenUI\SomerenUI.cs:line 74
+===========End============= 16/03/2022 6:37:23 pm
